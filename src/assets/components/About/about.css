@@ -1,0 +1,72 @@
+.aboutpage{
+    height: max-content;
+    background-color: black;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+.aboutpage h1{
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    text-decoration: underline purple 5px;
+}
+#about_image{
+    height: 600px;
+}
+.about_img_background{
+    width: 50%;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 40px 0 0 30px;
+    transition: all 0.5s ease;
+}
+.about_img_background:hover{
+    transform: scale(1.03);
+    cursor: none;
+}
+.image_text_container{
+    display: flex;
+}
+.about_text_container{
+    height: max-content;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    color: #C0c3cb;
+    flex-direction: column;
+}
+#logo_about{
+    width: 200px;
+}
+@media screen and (max-width:1080px) {
+    #about_image{
+        width: 90vw;
+        padding: 0;
+        height: max-content;
+        padding-top: 20px;
+    }
+    .about_img_background{
+        width: 90vw;
+        justify-self: center;
+        display: flex;
+        padding: 0;
+        padding-left: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+    .image_text_container{
+        flex-direction: column;
+    }
+    .about_text_container{
+        width: 90vw;
+        justify-self: center;
+        align-self: center;
+        padding-left: 10px;
+    }
+    #para_2{
+        display: none;
+    }
+}

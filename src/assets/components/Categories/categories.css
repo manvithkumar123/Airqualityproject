@@ -1,0 +1,62 @@
+.air_quality_page{
+    height: max-content;
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+}
+.air_quality_page h1{
+    text-align: center;
+    text-decoration: underline 5px purple;
+    color: white;
+}
+.air_quality_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: none;
+    flex-wrap: wrap;
+}
+.category_card{
+    height: 300px;
+    width: 320px;
+    border-radius: 10px;
+    background-color: rgb(22,22,22);
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    justify-content: center;
+    align-items: center;
+    cursor: none;
+    transition: all 0.5s ease;
+    color: white;
+}
+.category_card:hover{
+    transform: scale(1.05);
+}
+.category_card:nth-child(1):hover{
+    background-image: linear-gradient(to top, #000000, #4e1f19, #834a00, #898c00, #06d506);
+}
+.category_card:nth-child(2):hover{
+    background-image: linear-gradient(to top, #000000, #5b2c2b, #b05d34, #eca521, #ffff00);
+}
+.category_card:nth-child(3):hover{
+    background-image: linear-gradient(to top, #161616, #4d3049, #9e425d, #e4644a, #ffa500);
+}
+.category_card:nth-child(4):hover{
+    background-image: linear-gradient(to top, #161616, #402245, #861459, #ce0047, #ff0000);
+}
+.category_card:nth-child(5):hover{
+    background-image: linear-gradient(to top, #161616, #251d35, #3b2152, #5a1d6c, #800080);
+}
+.category_card:nth-child(6):hover{
+    background-image: linear-gradient(to top, #161616, #2a192c, #4b1333, #6c0025, #800000);
+}
+.category_card h2{
+    text-decoration: underline 5px purple;
+}
+#category_logo{
+    font-size: 30px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}

@@ -1,0 +1,23 @@
+#root{
+    background-color: black;
+    background-image: url(./src/assets/images/background_blue.svg);
+    background-size: cover;
+    height: 125vh;
+    max-width: 100vw;
+    padding-top: 50px;
+}
+@media screen and (max-width:480px) {
+    #root{
+        height: 100vh;
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+
+}
+/* Add this to your main global CSS file (e.g., index.css or App.css) */
+html, body {
+    margin: 0;
+    padding: 0;
+  }

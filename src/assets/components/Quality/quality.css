@@ -1,0 +1,78 @@
+.qualitypage{
+    background-color: black;
+    height: max-content;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.qualitypage h1{
+    color: white;
+    text-decoration: 5px purple underline;
+    text-align: center;
+}
+.quality_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.login_container{
+    height: 400px;
+    margin-top: 30px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+    background-color: #202020;
+}
+.login_container:hover{
+    transform: scale(1.05);
+    background-image: linear-gradient(to bottom, #000000, #372834, #5a5174, #5d85bd, #0cc1fc);
+}
+.search_box{
+    display: flex;
+}
+#city-aqi-container{
+    margin-top: 20px;
+}
+#city-widget{
+    margin-top: 10px;
+}
+.login_container h2{
+    color: white;
+    
+    text-decoration: 4px purple underline;
+}
+.search_box input{
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    width: max-content;
+    padding-left: 10px;
+    border: none;
+}
+#alt-city::placeholder{
+    font-size: 13px;
+}
+#enter_button{
+    margin-left: 10px;
+    width: 60px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    border: 0.02px solid rgb(154, 156, 163);
+}
+#enter_button:active{
+    background-color: white;
+    color: black;
+}
+@media screen and (max-width:1080px) {
+    .login_container{
+        width: 80vw;
+    }
+}

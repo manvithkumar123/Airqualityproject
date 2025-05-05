@@ -1,0 +1,48 @@
+.maps_page{
+    height: max-content;
+    background-color: black;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.maps_page h1{
+    text-decoration: 5px purple underline;
+    color: white;
+    text-align: center;
+}
+#map{
+    height: 70vh;
+    width: 60vw;
+    border-radius: 10px;
+}
+.map_background{
+    height: 80vh;
+    background-color: rgb(22,22,22);
+    display: flex;
+    margin-top: 10px;
+    padding-left: 20px;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+}
+.colour_bg{
+    height: 300px;
+    width: 300px;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+.colour_bg li{
+    list-style: none;
+    text-align: right;
+    display: flex;
+}
+.colour{
+    height: 10px;
+    width: 30px;
+    margin-top: 7px;
+    margin-left: 10px;
+}
