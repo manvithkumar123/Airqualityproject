@@ -46,3 +46,18 @@
     margin-top: 7px;
     margin-left: 10px;
 }
+@media screen and (max-width:1080px) {
+    .map_background{
+        flex-direction: column;
+        width: 90vw;
+        height: 40vh;
+        background-color: red;
+        padding: 0;
+    }
+    .colour_bg{
+        display: none;
+    }
+    #map{
+        width: 90vw;
+    }
+}

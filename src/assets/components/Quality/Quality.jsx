@@ -138,7 +138,13 @@ const Quality = () => {
           {/* Custom widget container */}
           <div id="city-widget" className="city-widget"></div>
         </div>
+        <div className="robo_bg2">
+
+        <spline-viewer className="robo_2"url="https://prod.spline.design/isiXzQiqmKJvEn0m/scene.splinecode"></spline-viewer>
+        </div>
       </div>
+      <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.89/build/spline-viewer.js"></script>
+     
     </div>
   );
 };

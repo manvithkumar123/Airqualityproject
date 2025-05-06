@@ -8,21 +8,21 @@ import Parameters from './assets/components/Parameters/Parameters'
 import Categories from './assets/components/Categories/Categories'
 import Quality from './assets/components/Quality/Quality'
 import Map from './assets/components/Map/Map'
-import Footer from './assets/components/footer/Footer'
+import Vayuvbot from './assets/components/vayu/Vayuvbot'
 
 const App = () => {
   return (
     <div>
       <Navbar/>
-      <Home/>/
-      <Metrics/>
-      <Trends/>
-      <About/>
-      <Parameters/>
-      <Categories/>
-      <Quality/>
-      <Map/>
-      <Footer/>
+      <div id="home"><Home/></div>
+      <div id="metrics"><Metrics/></div>
+      <div id="trends"><Trends/></div>
+      <div id="about"><About/></div>
+      <div id="parameters"><Parameters/></div>
+      <div id="categories"><Categories/></div>
+      <div id="quality"><Quality/></div>
+      <div id="map1"><Map/></div>
+      <div id="vayuvbot"><Vayuvbot/></div>
     </div>
   )
 }

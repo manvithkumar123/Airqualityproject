@@ -1,12 +1,21 @@
-import React from 'react'
-import "./footer.css"
-import images from '../../images/images'
+import React, { useEffect } from 'react';
+import "./Vayuvbot.css"
 
-const Footer = () => {
+const Vayuvbot = () => {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.type = 'module';
+    script.src = 'https://unpkg.com/@splinetool/viewer@1.9.89/build/spline-viewer.js';
+    document.body.appendChild(script);
+  }, []);
+
   return (
-    <div className='footer_page'>
-        <div className="footer_bg" style={{ backgroundImage: `url(${images.footer})` }}>
-            <div className="footer_box">
+    <div className='robo_page'>
+      <h1 style={{textAlign:"center",paddingTop:"50px"}}>Creators</h1>
+        <div className="robo_bg">
+      < spline-viewer className="robo" url="https://prod.spline.design/D5cy91ojE5WhqwWr/scene.splinecode" />
+      <div className="information_flex">
+      <div className="footer_box">
                 <div className="circle_img"></div>
                 <h5>Medipelly Manvith kumar</h5>
                 <p>A passionate web developer interested in development, design, and building meaningful digital experiences. Always eager to learn new technologies and contribute to impactful projects.</p>
@@ -42,16 +51,13 @@ const Footer = () => {
 
                 </div>
             </div>
-            <div className="footer_box">
-            <div className="circle_img"></div>
-              <h5>Vayuv</h5>
-              <p>
-                Our project, Vayuv, is an air quality monitoring application designed to measure and display air quality parameters such as AQI, PM2.5, and PM10 using data from the OpenWeather API. The website is user-friendly and features interactive graphs showing the air quality trends from the past 24 hours.
-              </p>
-            </div>
-      </div>
-    </div>
-  )
-}
+          </div>
+        </div>
 
-export default Footer
+
+
+    </div>
+  );
+};
+
+export default Vayuvbot;

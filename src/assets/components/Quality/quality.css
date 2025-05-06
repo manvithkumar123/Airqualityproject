@@ -71,6 +71,16 @@
     background-color: white;
     color: black;
 }
+.robo_2{
+    height: 190px;
+    width: 600px;
+    transform: scale(2.0);
+}
+.robo_bg2{
+    height: 400px;
+    width: 500px;
+    overflow: hidden;
+}
 @media screen and (max-width:1080px) {
     .login_container{
         width: 80vw;

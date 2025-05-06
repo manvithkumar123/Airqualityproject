@@ -1,19 +1,36 @@
-.footer_page{
+
+.robo{
+    width: 90vw;
+    height: 60vh;
+    transform: scale(1.5);
+}
+.robo_bg{
+    width: 90vw;
+    justify-self: center;
+    align-self: center;
+    background-color: rgb(22,22,22);
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.robo_page{
     background-color: black;
     height: max-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 30px;
 }
-.footer_bg{
-    background-color: rgb(22,22,22);
-    height: 80vh;
+.robo_page h1{
+    color: white;
+    text-decoration: 5px underline purple;
+}
+.information_flex{
     display: flex;
-    width: 90vw;
-    border-radius: 20px;
-    justify-content: center;
-    background-size: contain;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 20px;
+    height: max-content;
 }
 .footer_box{
     background-color: #363636;
@@ -56,4 +73,18 @@
 .links_container i{
     margin: 10px;
     cursor: pointer;
+}
+@media screen and (max-width:1080px) {
+    .robo{
+        display: none;
+    }
+    .information_flex{
+        display: block;
+    }
+    .robo_bg{
+        height: max-content;
+    }
+    .information_flex{
+        position: relative;
+    }
 }

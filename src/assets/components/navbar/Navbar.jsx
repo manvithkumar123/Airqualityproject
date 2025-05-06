@@ -35,55 +35,61 @@ const Navbar = () => {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <a className="nav-link" aria-current="page" href="#">
+          <a className="nav-link" aria-current="page" href="#home">
             Home
             <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="10px" fill="#FFFFFF"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
           </a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">
+          <a className="nav-link" href="#about">
             About
             <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="10px" fill="#FFFFFF"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
           </a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">
+          <a className="nav-link" href="#metrics">
             Metrics
             <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="10px" fill="#FFFFFF"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
           </a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">
+          <a className="nav-link" href="#trends">
             Trends
             <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="10px" fill="#FFFFFF"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
           </a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">
+          <a className="nav-link" href="#parameters">
           Parameters
           <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="10px" fill="#FFFFFF"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
           </a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">
+          <a className="nav-link" href="#categories">
           Categories
           <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="10px" fill="#FFFFFF"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
           </a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">
+          <a className="nav-link" href="#quality">
           Find Now
           <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="10px" fill="#FFFFFF"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
           </a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">
+          <a className="nav-link" href="#map1">
             Maps
             <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="10px" fill="#FFFFFF"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
           </a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">
+          <a className="nav-link" href="#map">
+            Creators
+            <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="10px" fill="#FFFFFF"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+          </a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="#vayuvbot">
           <button id='navbar_button'>Log in</button>
           </a>
         </li>
