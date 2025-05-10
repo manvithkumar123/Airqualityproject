@@ -59,7 +59,7 @@
 #alt-city::placeholder{
     font-size: 13px;
 }
-#enter_button{
+#enter_button1{
     margin-left: 10px;
     width: 60px;
     border-radius: 10px;
@@ -67,22 +67,38 @@
     color: white;
     border: 0.02px solid rgb(154, 156, 163);
 }
-#enter_button:active{
+#enter_button1:active{
     background-color: white;
     color: black;
 }
 .robo_2{
     height: 190px;
     width: 600px;
+    padding-top: 50px;
+    border-radius: 10px;
+    margin-top: 20px;
     transform: scale(2.0);
 }
 .robo_bg2{
     height: 400px;
     width: 500px;
+    background-color: rgb(22,22,22);
     overflow: hidden;
+    margin-top: 10px;
+    border-radius: 10px;
 }
 @media screen and (max-width:1080px) {
     .login_container{
         width: 80vw;
+        flex-direction: column;
+    }
+    .robo_bg2{
+        display: none;
+    }
+    .search_box{
+        flex-direction: column;
+    }
+    #enter_button1{
+        margin-top: 10px;
     }
 }

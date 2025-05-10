@@ -12,9 +12,21 @@ const Vayuvbot = () => {
   return (
     <div className='robo_page'>
       <h1 style={{textAlign:"center",paddingTop:"50px"}}>Creators</h1>
-        <div className="robo_bg">
+        <div className="robo_bg" id='robopage'>
       < spline-viewer className="robo" url="https://prod.spline.design/D5cy91ojE5WhqwWr/scene.splinecode" />
       <div className="information_flex">
+      <div className="footer_box">
+            <div className="circle_img"></div>
+            <h5>Garlapati Mohan Krishna</h5>
+            <p>A passionate UI/UX designer focused on creating intuitive and visually appealing user experiences. Dedicated to blending aesthetics with usability for impactful digital design.</p>
+            <div className="links_container">
+                <i className="fa-brands fa-instagram" style={{color: "#ffffff"}}></i>
+                <i className="fa-brands fa-github" style={{color: "#ffffff"}}></i>
+                <i className="fa-brands fa-x-twitter" style={{color: "#ffffff"}}></i>
+                <i className="fa-brands fa-linkedin" style={{color: "#ffffff"}}></i>
+
+                </div>
+            </div>
       <div className="footer_box">
                 <div className="circle_img"></div>
                 <h5>Medipelly Manvith kumar</h5>
@@ -27,18 +39,7 @@ const Vayuvbot = () => {
 
                 </div>
             </div>
-            <div className="footer_box">
-            <div className="circle_img"></div>
-            <h5>Garlapati Mohan Krishna</h5>
-            <p>A passionate UI/UX designer focused on creating intuitive and visually appealing user experiences. Dedicated to blending aesthetics with usability for impactful digital design.</p>
-            <div className="links_container">
-                <i className="fa-brands fa-instagram" style={{color: "#ffffff"}}></i>
-                <i className="fa-brands fa-github" style={{color: "#ffffff"}}></i>
-                <i className="fa-brands fa-x-twitter" style={{color: "#ffffff"}}></i>
-                <i className="fa-brands fa-linkedin" style={{color: "#ffffff"}}></i>
 
-                </div>
-            </div>
             <div className="footer_box">
             <div className="circle_img"></div>
             <h5>Vedipyappan Benny</h5>

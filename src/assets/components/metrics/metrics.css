@@ -1,5 +1,6 @@
 .metrics_page{
     width: 100vw;
+    
     height: max-content;
     background-color: black;
 }
@@ -7,6 +8,7 @@
     width: 100vw;
     display: flex;
     flex-wrap: wrap;
+
     justify-content: space-evenly;
     cursor: none;
     height: max-content;
@@ -35,7 +37,6 @@
     font-optical-sizing: auto;
     font-weight:400;
     font-style: bold;
-    text-decoration: 5px underline purple;
 }
 #metrics_logo{
     font-size: 40px;

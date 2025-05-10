@@ -70,6 +70,147 @@ nav{
 .navbar-toggler .collapsed:active{
     border: none;
 }
+.dropdown-menu {
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    transform: translateY(0) !important;
+    z-index: 1000;
+    display: none;
+  }
+  
+  .nav-item.dropdown.show .dropdown-menu {
+    display: block;
+}
+/* Make sure the dropdown menu is hidden by default */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: flex;
+  }
+  
+  /* Optional: Position the dropdown correctly */
+  .dropdown-menu {
+    display: none; /* Hide by default */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+  }
+
+.dropdown-menu{
+    background-color: rgb(22,22,22);
+    height: 220px;
+    width: 450px;
+    -webkit-animation: slide-in-fwd-top 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-fwd-top 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    color: white;
+}
+@-webkit-keyframes slide-in-fwd-top {
+    0% {
+      -webkit-transform: translateZ(-1400px) translateY(-800px);
+              transform: translateZ(-1400px) translateY(-800px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0) translateY(0);
+              transform: translateZ(0) translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-fwd-top {
+    0% {
+      -webkit-transform: translateZ(-1400px) translateY(-800px);
+              transform: translateZ(-1400px) translateY(-800px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0) translateY(0);
+              transform: translateZ(0) translateY(0);
+      opacity: 1;
+    }
+  }
+  
+.line{
+    height: 100%;
+    width: 3px;
+    background-color: #C0c3cb;
+}
+.abt_text{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    color: #C0c3cb;
+    opacity: 40%;
+}
+.dropdown-item{
+    color: #C0c3cb;
+}
+#dropdown1{
+    list-style: none;
+}
+.login_container1{
+  height: 150px;
+  width: 300px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: rgb(22,22,22);
+}
+.login_container1 input{
+  padding: 5px 0 5px 20px;
+  margin: 10px;
+  justify-self: center;
+  border-radius: 10px;
+  align-self: center;
+  width: 200px;
+}
+.login_container1 #enter_button{
+  background-color: white;
+  width: 200px;
+  color: black;
+  border: 1px solid gray;
+  margin: 5px;
+  align-self: center;
+  box-shadow: 0 0 0.2rem whitesmoke;
+}
+#enter_button:hover{
+  animation: buttoncolour 10s infinite ease;
+  cursor: pointer;
+}
+@keyframes buttoncolour {
+  0%{
+    border-color: red;
+    border: 2px solid;
+  }
+  25%{
+    border-color: yellow;
+    border: 2px solid;
+  }
+  50%{
+    border-color: green;
+    border: 2px solid;
+  }
+  75%{
+    border: 2px solid;
+    border-color: blue;
+  }
+}
+.signin{
+  color: white;
+  margin-top: 10px;
+  padding-left: 100px;
+  text-align: center;
+}
+#cancel{
+  width: max-content;
+  background-color: transparent;
+  color: white;
+  margin-left: 10px;
+  margin-top: 10px;
+  height: max-content;
+
+  border: none;
+}
 @media screen and (max-width:1080px) {
     nav{
         width: 80%;
@@ -80,5 +221,15 @@ nav{
     #navbarSupportedContent{
         background-color: black !important;
         padding-left: 20px;
+        height: 500px;
+    }
+    .dropdown-menu{
+      width: 100%;
+      height: max-content;
+      flex-direction: column;
+      padding-left: 0;
+    }
+    #dropdown1{
+      padding-left: 0;
     }
 }

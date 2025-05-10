@@ -29,8 +29,8 @@ const Parameters = () => {
             </div>
         </div>
         <div className="parameter_card">
-        <h3>PM10</h3>
-            <div>Coarse particulate matter with a diameter between 2.5 and 10 micrometers. These particles can enter the respiratory system but are generally filtered out before reaching the lungs.
+        <h3>CO2</h3>
+            <div>   Carbon dioxide (CO₂) is a naturally occurring gas that is also a byproduct of various human activities. It is essential for the Earth's carbon cycle but contributes significantly to global warming when its concentration in the atmosphere rises due to human actions.
             <h5>Sources:</h5><br />
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M400-280v-400l200 200-200 200Z"/></svg>Human and animal respiration            <br />
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M400-280v-400l200 200-200 200Z"/></svg>Combustion of fossil fuels            <br />

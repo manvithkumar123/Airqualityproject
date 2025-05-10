@@ -20,4 +20,5 @@
 html, body {
     margin: 0;
     padding: 0;
-  }
+    cursor: url("./public/cursor-48.cur"), auto;
+}

@@ -11,10 +11,10 @@ const Home = () => {
         Track PM2.5, PM10, CO2, and NO levels <br />to stay informed about the air you breathe.
         </p>
         <div className="button_container">
-            <button id='know_button'>Know In My Location</button>
+            <button id='know_button'><a href="#map1" style={{textDecoration:"none",color:"black"}}>Know In My Location</a></button>
         </div>
         <div className="frame">
-            <video src={images.video} autoPlay loop muted playsInline id='videointromy'></video>
+        <spline-viewer url="https://prod.spline.design/LyllTwoID7y5r9KO/scene.splinecode" id="earth_view"></spline-viewer>
         </div>
         </div>
     </div>

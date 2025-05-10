@@ -118,7 +118,7 @@ const Quality = () => {
               onChange={(e) => setCity(e.target.value)}
               placeholder='Enter city'
             />
-            <button onClick={handleSubmit} id='enter_button'>Enter</button>
+            <button onClick={handleSubmit} id='enter_button1'>Enter</button>
           </div>
           {/* AQI widget container for selected city */}
           <div id="city-aqi-container"></div>
@@ -133,13 +133,12 @@ const Quality = () => {
               onChange={(e) => setAltCity(e.target.value)}
               placeholder="Enter city for custom widget"
             />
-            <button onClick={handleAltSubmit}  id='enter_button'>Enter</button>
+            <button onClick={handleAltSubmit}  id='enter_button1'>Enter</button>
           </div>
           {/* Custom widget container */}
           <div id="city-widget" className="city-widget"></div>
         </div>
         <div className="robo_bg2">
-
         <spline-viewer className="robo_2"url="https://prod.spline.design/isiXzQiqmKJvEn0m/scene.splinecode"></spline-viewer>
         </div>
       </div>
