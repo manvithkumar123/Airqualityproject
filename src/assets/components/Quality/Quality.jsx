@@ -1,12 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import './quality.css';
+import { Context } from '../context/Context';
+import images from "../../images/images";
 
 const Quality = () => {
+  const [input, setinput] = useState("");
+  const { onSent, resultData, Loading } = useContext(Context);
   const [city, setCity] = useState('');
   const [selectedCity, setSelectedCity] = useState('');
   const [cities, setCities] = useState(['beijing', 'hyderabad', 'delhi']); // Example cities
   const [altCity, setAltCity] = useState('');
   const [altSelectedCity, setAltSelectedCity] = useState('');
+  const [geminiInput, setGeminiInput] = useState('');
+  const [geminiResponse, setGeminiResponse] = useState('');
 
   useEffect(() => {
     // This will load AQI data for multiple cities after the component mounts
@@ -103,7 +109,6 @@ const Quality = () => {
   const handleAltSubmit = () => {
     setAltSelectedCity(altCity);
   };
-
   return (
     <div className="qualitypage">
       <h1>Find your location Air Quality</h1>
@@ -143,7 +148,52 @@ const Quality = () => {
         </div>
       </div>
       <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.89/build/spline-viewer.js"></script>
-     
+      <div className="login_container1">
+        <h4>ASK <img src={images.logo} alt="" id='logo' style={{marginLeft: '2px'}}/> </h4>
+        <p>updated upto 2023</p>
+        <div className="result_output">
+          {Loading ? (
+            <p>Loading...</p>
+          ) : (
+            <p dangerouslySetInnerHTML={{ __html: geminiResponse || resultData }}></p>
+          )}
+        </div>
+        <div className="input_send">
+          <input
+            onChange={(e) => setinput(e.target.value)}
+            type="text"
+            placeholder="Enter your message"
+          />
+          <button
+            onClick={() => {
+              const query = input.trim().toLowerCase();
+              setGeminiResponse("");
+              if (query === "manvith") {
+                setGeminiResponse("Manvith is the member of this project well talented and hardworking web developer");
+              } else if (query === "what is vayu") {
+                setGeminiResponse("vayu is the project which is used to find the air quality of the city created by Manvith,Benny,Mohan");
+              } else if (query === "benny") {
+                setGeminiResponse("Benny is the member of this project well talented and hardworking app developer");
+              } else if (query === "mohan") {
+                setGeminiResponse("Mohan is the member of this project well talented and hardworking software developer");
+              } else if (query === "who are you") {
+                setGeminiResponse("I am Vayu, a virtual assistant created by Manvith, Benny, and Mohan to help you with your questions and tasks.");
+              } else {
+                onSent(input);
+              }
+            }}
+          >
+            Send
+          </button>
+          <div className="button_container">
+          <button onClick={() => setGeminiResponse("Manvith is the member of this project well talented and hardworking web developer")}>About Manvith</button>
+          <button onClick={() => setGeminiResponse("Benny is the member of this project well talented and hardworking app developer")}>About Benny</button>
+          <button onClick={() => setGeminiResponse("Mohan is the member of this project well talented and hardworking software developer")}>About Mohan</button>
+          <button onClick={() => setGeminiResponse("I am Vayu, a virtual assistant created by Manvith, Benny, and Mohan to help you with your questions and tasks.")}>Who am I</button>
+          </div>
+        </div>
+
+        </div>
     </div>
   );
 };

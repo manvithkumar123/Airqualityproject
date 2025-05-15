@@ -14,7 +14,8 @@ const Home = () => {
             <button id='know_button'><a href="#map1" style={{textDecoration:"none",color:"black"}}>Know In My Location</a></button>
         </div>
         <div className="frame">
-        <spline-viewer url="https://prod.spline.design/LyllTwoID7y5r9KO/scene.splinecode" id="earth_view"></spline-viewer>
+          <h3 style={{fontWeight:"600",fontSize:"30px",textAlign:"center",marginTop:"10px",color:"white"}}>Loading 3D view...</h3>
+          <spline-viewer url="https://prod.spline.design/LyllTwoID7y5r9KO/scene.splinecode" id="earth_view"></spline-viewer>
         </div>
         </div>
     </div>

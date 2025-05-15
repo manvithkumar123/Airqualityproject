@@ -246,7 +246,7 @@ const Navbar = () => {
           <div className="nav-link">
             <button id='navbar_button' onClick={() => setShowLogin(!showLogin)}>Log in</button>
             {showLogin && (
-              <div ref={loginRef} className="login_container1" style={{ position: "absolute" }}>
+              <div ref={loginRef} className="login_container2" style={{ position: "absolute" }}>
                 <button onClick={() => setShowLogin(false)} id='cancel'><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></button>
                 <button id="enter_button" onClick={signInWithGoogle}>Sign in with Google <i className="fa-brands fa-google"></i></button>
                 <button id="enter_button" onClick={signinwithgithub}>Sign in with GitHub <i className="fa-brands fa-github"></i></button>
