@@ -149,7 +149,7 @@
     flex-wrap: wrap;
 }
 .button_container button{
-    margin-left: 10px;
+    margin: 10px;
     width: max-content;
     padding: 0px 5px 0 5px;
     border-radius: 10px;
@@ -171,5 +171,8 @@
     }
     .login_container1{
         width: 90vw;
+    }
+    .input_send button{
+        margin-top: 10px;
     }
 }

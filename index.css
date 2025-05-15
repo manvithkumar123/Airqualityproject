@@ -6,9 +6,14 @@
     max-width: 100vw;
     padding-top: 50px;
 }
-@media screen and (max-width:480px) {
+@media screen and (max-width:1080px) {
     #root{
-        height: 100vh;
+        height: 125vh;
+    }
+}
+@media screen and (max-width:1280px) {
+    #root{
+        height: 1250vh;
     }
 }
 *{

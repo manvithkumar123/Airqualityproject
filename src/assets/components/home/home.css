@@ -1,3 +1,7 @@
+.homepage{
+    height: max-content;
+
+}
 .text_container h1{
     text-align: center;
     color: white;
@@ -57,7 +61,7 @@
         padding-top: 40px;
     }
     .frame{
-        width: 90vw;
-        height: 40vh;
+        width: 300px;
+        height: 300px;
     }
 }

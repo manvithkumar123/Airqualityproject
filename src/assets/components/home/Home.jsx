@@ -4,7 +4,7 @@ import images from '../../images/images'
 
 const Home = () => {
   return (
-    <div>
+    <div className='homepage'>
         <div className="text_container">
         <h1>Breathe Easy with <br />Real-Time Air Quality Monitoring</h1>
         <p>
